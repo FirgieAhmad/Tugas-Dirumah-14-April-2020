@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+// Tugas Dirumah Pada Tanggal 14 Maret 2020 == Membuat Variable Lokal dan Variable Global
+// Nama : Firgie Ahmad == NIM ETE10190123
+
+//ini variable global
+int k = 50;
+
+int contohFunction()
+{
+	k = 25;
+	return k; 
+}
+
+int l = 60;
+
+int contohFunction2()
+{
+	l = 30;
+	return l; 
+}
+
+int m = 70;
+
+int contohFunction3()
+{
+	l = 35;
+	return l; 
+}
+
+int main ()
+{
+		cout << " ini variable global 1 " << k << endl;
+		cout << " ini variable global dari fungsi contohFunction " << contohFunction();
+		cout << endl;
+	
+		cout << " ini variable global 2 " << l << endl;
+		cout << " ini variable lokal dari fungsi contohFunction2 " << contohFunction2();
+		cout << endl;
+		
+		cout << " ini variable global 3 " << m << endl;
+		cout << " ini variable lokal dari fungsi contohFunction3 " << contohFunction3();
+		cout << endl;
+}
